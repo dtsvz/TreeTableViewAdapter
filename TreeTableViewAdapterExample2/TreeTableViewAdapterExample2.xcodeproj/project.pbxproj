@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		325075731DC64E6D00712D91 /* TreeTableViewAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */; };
 		325F465F1DC545270079F2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F465E1DC545270079F2EE /* AppDelegate.swift */; };
 		325F46611DC545270079F2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46601DC545270079F2EE /* ViewController.swift */; };
 		325F46641DC545270079F2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46621DC545270079F2EE /* Main.storyboard */; };
 		325F46661DC545270079F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325F46651DC545270079F2EE /* Assets.xcassets */; };
 		325F46691DC545270079F2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46671DC545270079F2EE /* LaunchScreen.storyboard */; };
 		325F46771DC5549C0079F2EE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46761DC5549C0079F2EE /* Helpers.swift */; };
+		32B3D9241DC6855C00D9A0F6 /* TreeTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3D9231DC6855C00D9A0F6 /* TreeTableViewAdapter.swift */; };
 		32BCA8311DC66D56000A74E2 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */; };
 		32BCA8331DC66E2F000A74E2 /* OrderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableViewAdaptor.swift; path = ../../TreeTableViewAdaptor/TreeTableViewAdaptor.swift; sourceTree = "<group>"; };
-		325F465B1DC545260079F2EE /* TreeTableViewAdaptorExample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeTableViewAdaptorExample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		325F465B1DC545260079F2EE /* TreeTableViewAdapterExample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeTableViewAdapterExample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		325F465E1DC545270079F2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		325F46601DC545270079F2EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		325F46631DC545270079F2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		325F46681DC545270079F2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		325F466A1DC545270079F2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		325F46761DC5549C0079F2EE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		32B3D9231DC6855C00D9A0F6 /* TreeTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableViewAdapter.swift; path = ../../TreeTableViewAdapter/TreeTableViewAdapter.swift; sourceTree = "<group>"; };
 		32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +46,7 @@
 		325F46521DC545260079F2EE = {
 			isa = PBXGroup;
 			children = (
-				325F465D1DC545270079F2EE /* TreeTableViewAdaptor */,
+				325F465D1DC545270079F2EE /* TreeTableViewAdapter */,
 				325F465C1DC545260079F2EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,15 +54,15 @@
 		325F465C1DC545260079F2EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				325F465B1DC545260079F2EE /* TreeTableViewAdaptorExample2.app */,
+				325F465B1DC545260079F2EE /* TreeTableViewAdapterExample2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		325F465D1DC545270079F2EE /* TreeTableViewAdaptor */ = {
+		325F465D1DC545270079F2EE /* TreeTableViewAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */,
+				32B3D9231DC6855C00D9A0F6 /* TreeTableViewAdapter.swift */,
 				325F465E1DC545270079F2EE /* AppDelegate.swift */,
 				325F46601DC545270079F2EE /* ViewController.swift */,
 				325F46621DC545270079F2EE /* Main.storyboard */,
@@ -73,15 +73,16 @@
 				32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */,
 				32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */,
 			);
+			name = TreeTableViewAdapter;
 			path = TreeTableViewAdaptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		325F465A1DC545260079F2EE /* TreeTableViewAdaptorExample2 */ = {
+		325F465A1DC545260079F2EE /* TreeTableViewAdapterExample2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 325F466D1DC545270079F2EE /* Build configuration list for PBXNativeTarget "TreeTableViewAdaptorExample2" */;
+			buildConfigurationList = 325F466D1DC545270079F2EE /* Build configuration list for PBXNativeTarget "TreeTableViewAdapterExample2" */;
 			buildPhases = (
 				325F46571DC545260079F2EE /* Sources */,
 				325F46581DC545260079F2EE /* Frameworks */,
@@ -91,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = TreeTableViewAdaptorExample2;
+			name = TreeTableViewAdapterExample2;
 			productName = TreeTableViewAdaptor;
-			productReference = 325F465B1DC545260079F2EE /* TreeTableViewAdaptorExample2.app */;
+			productReference = 325F465B1DC545260079F2EE /* TreeTableViewAdapterExample2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 325F46561DC545260079F2EE /* Build configuration list for PBXProject "TreeTableViewAdaptorExample2" */;
+			buildConfigurationList = 325F46561DC545260079F2EE /* Build configuration list for PBXProject "TreeTableViewAdapterExample2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				325F465A1DC545260079F2EE /* TreeTableViewAdaptorExample2 */,
+				325F465A1DC545260079F2EE /* TreeTableViewAdapterExample2 */,
 			);
 		};
 /* End PBXProject section */
@@ -149,11 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				325F46771DC5549C0079F2EE /* Helpers.swift in Sources */,
-				325075731DC64E6D00712D91 /* TreeTableViewAdaptor.swift in Sources */,
 				325F46611DC545270079F2EE /* ViewController.swift in Sources */,
 				32BCA8331DC66E2F000A74E2 /* OrderCellViewModel.swift in Sources */,
 				32BCA8311DC66D56000A74E2 /* OrderTableViewCell.swift in Sources */,
 				325F465F1DC545270079F2EE /* AppDelegate.swift in Sources */,
+				32B3D9241DC6855C00D9A0F6 /* TreeTableViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +272,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TreeTableViewAdaptor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtsvz.TreeTableViewAdaptorExample2;
-				PRODUCT_NAME = TreeTableViewAdaptorExample2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtsvz.TreeTableViewAdapterExample2;
+				PRODUCT_NAME = TreeTableViewAdapterExample2;
 			};
 			name = Debug;
 		};
@@ -283,15 +284,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TreeTableViewAdaptor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dtsvz.TreeTableViewAdaptorExample2;
-				PRODUCT_NAME = TreeTableViewAdaptorExample2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtsvz.TreeTableViewAdapterExample2;
+				PRODUCT_NAME = TreeTableViewAdapterExample2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		325F46561DC545260079F2EE /* Build configuration list for PBXProject "TreeTableViewAdaptorExample2" */ = {
+		325F46561DC545260079F2EE /* Build configuration list for PBXProject "TreeTableViewAdapterExample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				325F466B1DC545270079F2EE /* Debug */,
@@ -300,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		325F466D1DC545270079F2EE /* Build configuration list for PBXNativeTarget "TreeTableViewAdaptorExample2" */ = {
+		325F466D1DC545270079F2EE /* Build configuration list for PBXNativeTarget "TreeTableViewAdapterExample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				325F466E1DC545270079F2EE /* Debug */,

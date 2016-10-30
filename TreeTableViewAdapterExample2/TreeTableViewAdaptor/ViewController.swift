@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TreeTableViewAdaptor
+//  TreeTableViewAdapter
 //
 //  Created by Dmitriy Tsvetkov on 29.10.16.
 //  Copyright © 2016 Dmitriy Tsvetkov. All rights reserved.
@@ -17,7 +17,7 @@ enum CellIdents: String {
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var orderAdaptor = TreeTableViewAdaptor<OrderCellViewModel>()
+    var orderAdaptor = TreeTableViewAdapter<OrderCellViewModel>()
     
     override func viewDidLoad() {
         super.viewDidLoad()

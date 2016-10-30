@@ -1,5 +1,5 @@
 //
-//  TreeTableViewAdaptor.swift
+//  TreeTableViewAdapter.swift
 //  LETU
 //
 //  Created by Dmitrii Tsvetkov on 6/21/16.
@@ -16,7 +16,7 @@ public protocol TreeNode {
     func children <T where T: TreeNode> () -> [T]
 }
 
-public class TreeTableViewAdaptor <T where T: TreeNode> {
+public class TreeTableViewAdapter <T where T: TreeNode> {
     private var openedNodes   = [TreeIndexPath]()
     private var flatTableData = [TreeIndexPath]()
     private var modelToIndexPathMap = [TreeIndexPath : T]()
@@ -214,7 +214,7 @@ public class TreeTableViewAdaptor <T where T: TreeNode> {
     }
 }
 
-extension TreeTableViewAdaptor {
+extension TreeTableViewAdapter {
     var numberOfRows: Int {
         return flatTableData.count
     }

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TreeTableViewAdaptor
+//  TreeTableViewAdapter
 //
 //  Created by Dmitriy Tsvetkov on 29.10.16.
 //  Copyright © 2016 Dmitriy Tsvetkov. All rights reserved.
@@ -16,11 +16,11 @@ enum CellIdents: String {
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var folderAdaptor = TreeTableViewAdaptor<FolderCellViewModel>()
+    var folderAdapter = TreeTableViewAdapter<FolderCellViewModel>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        folderAdaptor.nodes = createModels()
+        folderAdapter.nodes = createModels()
         tableView.reloadData()
     }
     
@@ -49,12 +49,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openAll(sender: AnyObject) {
-        folderAdaptor.openAll()
+        folderAdapter.openAll()
         tableView.reloadData()
     }
     
     @IBAction func closeAll(sender: AnyObject) {
-        folderAdaptor.closeAll()
+        folderAdapter.closeAll()
         tableView.reloadData()
     }
 }
@@ -63,11 +63,11 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return folderAdaptor.numberOfRows
+        return folderAdapter.numberOfRows
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath),
+        guard let cellViewModel = folderAdapter.node(forIndexPath: indexPath),
               let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? FolderTableViewCell
         else { return cellNotFound() }
         
@@ -77,7 +77,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
-        folderAdaptor.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
+        guard let cellViewModel = folderAdapter.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
+        folderAdapter.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
     }
 }

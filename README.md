@@ -1,14 +1,14 @@
-# TreeTableViewAdaptor
+# TreeTableViewAdapter
 
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)]() [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Implementation of Adaptor pattern to add to UITableView supporting to show hierarchical data structures
+Implementation of Adapter pattern to add to UITableView supporting to show hierarchical data structures
 
 **Quick start:**
 - Just conform your model to TreeNode protocol and it can be displayed in UITableView hierarchically
 - Implement custom TableViewCell
-- Declare adaptor property in your UIViewController
-- Implement UITableViewDelegate and UITableViewDatasource using adaptor
+- Declare Adapter property in your UIViewController
+- Implement UITableViewDelegate and UITableViewDatasource using Adapter
 
 ![Image](https://www.dropbox.com/s/wwe998yhnv1u2t7/ezgif.com-resize.gif?dl=1) ![Image](https://www.dropbox.com/s/p9k8s3hziwly15j/ezgif.com-resize-3.gif?dl=1)
 
@@ -98,21 +98,21 @@ Implement custom tableview cell
 	}
 ```
 
-Declare adaptor
+Declare Adapter
 
 ```swift
-	var folderAdaptor = TreeTableViewAdaptor<FolderCellViewModel>()
+	var folderAdapter = TreeTableViewAdapter<FolderCellViewModel>()
 ```
 
-Implement UITableViewDelegate and UITableViewDatasource using adaptor
+Implement UITableViewDelegate and UITableViewDatasource using Adapter
 
 ```swift
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return folderAdaptor.numberOfRows
+        return folderAdapter.numberOfRows
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath),
+        guard let cellViewModel = folderAdapter.node(forIndexPath: indexPath),
               let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? FolderTableViewCell
         else { return cellNotFound() }
         
@@ -122,14 +122,14 @@ Implement UITableViewDelegate and UITableViewDatasource using adaptor
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
-        folderAdaptor.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
+        guard let cellViewModel = folderAdapter.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
+        folderAdapter.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
     }
 ```
 
-Set your model array to adaptor and reload data in UITableView
+Set your model array to Adapter and reload data in UITableView
 ```swift
-	folderAdaptor.nodes = [YOUR_MODEL]
+	folderAdapter.nodes = [YOUR_MODEL]
 	tableView.reloadData()
 ```
 
@@ -137,8 +137,8 @@ Set your model array to adaptor and reload data in UITableView
 
 **Carthage:**
 ```
-github "dtsvz/TreeTableViewAdaptor" == 1.0.0
+github "dtsvz/TreeTableViewAdapter" == 1.0.0
 ```
-Or you can manually add TreeTableViewAdaptor.swift file to your project
+Or you can manually add TreeTableViewAdapter.swift file to your project
 
 

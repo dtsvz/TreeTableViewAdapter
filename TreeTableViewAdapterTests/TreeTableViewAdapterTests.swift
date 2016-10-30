@@ -1,17 +1,16 @@
 //
-//  TreeTableViewAdaptorTests.swift
-//  TreeTableViewAdaptorTests
+//  TreeTableViewAdapterTests.swift
+//  TreeTableViewAdapterTests
 //
 //  Created by Dmitriy Tsvetkov on 30.10.16.
 //  Copyright © 2016 Dmitriy Tsvetkov. All rights reserved.
 //
 
 import XCTest
-@testable import TreeTableViewAdaptor
 
 let nodesCount = 10
 
-class TreeTableViewAdaptorTests: XCTestCase {
+class TreeTableViewAdapterTests: XCTestCase {
     
     let firstIndexPath  = NSIndexPath(forRow: 0, inSection: 0)
     let secondIndexPath = NSIndexPath(forRow: 1, inSection: 0)
@@ -180,8 +179,8 @@ class FolderCellViewModel: TreeNode {
     }
 }
 
-func adaptorForTest() -> TreeTableViewAdaptor<FolderCellViewModel> {
-    let adaptor = TreeTableViewAdaptor<FolderCellViewModel>()
+func adaptorForTest() -> TreeTableViewAdapter<FolderCellViewModel> {
+    let adaptor = TreeTableViewAdapter<FolderCellViewModel>()
     adaptor.nodes = createModels()
     return adaptor
 }
