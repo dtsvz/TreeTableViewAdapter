@@ -88,10 +88,10 @@ Set your model array to adaptor and reload data in UITableView
 
 ## Installation
 
-Carthage:
-
+**Carthage:**
+```
 github "dtsvz/TreeTableViewAdaptor" == 1.0.0
-
+```
 Or you can manually add TreeTableViewAdaptor.swift file to your project
 
 
