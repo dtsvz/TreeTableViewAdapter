@@ -4,4 +4,14 @@
 
 Implementation of Adaptor pattern to add to UITableView supporting to show hierarchical data structures
 
-![Image](https://www.dropbox.com/s/wquhgw3d06k2ur1/ezgif.com-optimize.gif?dl=1)
+- Just conform your model to TreeNode protocol and it can be displayed
+
+
+![Image](https://www.dropbox.com/s/wwe998yhnv1u2t7/ezgif.com-resize.gif?dl=1)
+
+## Example
+
+## Install
+
+
+
