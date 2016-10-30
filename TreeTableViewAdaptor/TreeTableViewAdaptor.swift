@@ -40,8 +40,6 @@ public class TreeTableViewAdaptor <T where T: TreeNode> {
     }
     
     public func closeNode(atIndexPath indexPath: NSIndexPath) {
-        
-        
         guard let treeIndexPath = indexPathToTreeIndexPath(indexPath) where isNodeOpened(atTreeIndexPath: treeIndexPath) else { return }
         removeFromExpadedIndexPath(treeIndexPath)
         var item = node(forIndexPath: indexPath)
