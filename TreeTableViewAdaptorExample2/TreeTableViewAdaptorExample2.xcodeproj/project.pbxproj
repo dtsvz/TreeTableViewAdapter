@@ -13,9 +13,9 @@
 		325F46641DC545270079F2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46621DC545270079F2EE /* Main.storyboard */; };
 		325F46661DC545270079F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325F46651DC545270079F2EE /* Assets.xcassets */; };
 		325F46691DC545270079F2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46671DC545270079F2EE /* LaunchScreen.storyboard */; };
-		325F46731DC54E7A0079F2EE /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46721DC54E7A0079F2EE /* FolderTableViewCell.swift */; };
-		325F46751DC54EC80079F2EE /* FolderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46741DC54EC80079F2EE /* FolderCellViewModel.swift */; };
 		325F46771DC5549C0079F2EE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46761DC5549C0079F2EE /* Helpers.swift */; };
+		32BCA8311DC66D56000A74E2 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */; };
+		32BCA8331DC66E2F000A74E2 /* OrderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		325F46651DC545270079F2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		325F46681DC545270079F2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		325F466A1DC545270079F2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		325F46721DC54E7A0079F2EE /* FolderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
-		325F46741DC54EC80079F2EE /* FolderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderCellViewModel.swift; sourceTree = "<group>"; };
 		325F46761DC5549C0079F2EE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				325F46651DC545270079F2EE /* Assets.xcassets */,
 				325F46671DC545270079F2EE /* LaunchScreen.storyboard */,
 				325F466A1DC545270079F2EE /* Info.plist */,
-				325F46721DC54E7A0079F2EE /* FolderTableViewCell.swift */,
-				325F46741DC54EC80079F2EE /* FolderCellViewModel.swift */,
 				325F46761DC5549C0079F2EE /* Helpers.swift */,
+				32BCA8301DC66D56000A74E2 /* OrderTableViewCell.swift */,
+				32BCA8321DC66E2F000A74E2 /* OrderCellViewModel.swift */,
 			);
 			path = TreeTableViewAdaptor;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 				325F46771DC5549C0079F2EE /* Helpers.swift in Sources */,
 				325075731DC64E6D00712D91 /* TreeTableViewAdaptor.swift in Sources */,
 				325F46611DC545270079F2EE /* ViewController.swift in Sources */,
-				325F46751DC54EC80079F2EE /* FolderCellViewModel.swift in Sources */,
+				32BCA8331DC66E2F000A74E2 /* OrderCellViewModel.swift in Sources */,
+				32BCA8311DC66D56000A74E2 /* OrderTableViewCell.swift in Sources */,
 				325F465F1DC545270079F2EE /* AppDelegate.swift in Sources */,
-				325F46731DC54E7A0079F2EE /* FolderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

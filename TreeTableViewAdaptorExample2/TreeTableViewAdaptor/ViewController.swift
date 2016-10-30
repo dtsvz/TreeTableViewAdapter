@@ -9,52 +9,58 @@
 import UIKit
 
 enum CellIdents: String {
-    case ParentCell = "ParentCell"
-    case LeafCell = "LeafCell"
+    case OrderCell = "OrderCell"
+    case ProductCell = "ProductCell"
+    case TotalCell = "TotalCell"
 }
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var folderAdaptor = TreeTableViewAdaptor<FolderCellViewModel>()
+    var orderAdaptor = TreeTableViewAdaptor<OrderCellViewModel>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        folderAdaptor.nodes = createModels()
+        orderAdaptor.nodes = createModels()
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = CGFloat(44.0)
         tableView.reloadData()
     }
     
-    func createModels() -> [FolderCellViewModel] {
-        var result = [FolderCellViewModel]()
-        result.appendContentsOf(folders())
-        
-        result.forEach {
-            $0.subFolders = folders("Sub folder")
-            $0.subFolders.forEach {
-                $0.subFolders = folders("File")
-            }
-        }
+    func createModels() -> [OrderCellViewModel] {
+        var result = [OrderCellViewModel]()
+        result.appendContentsOf(orders())
         
         return result
     }
     
-    func folders(prefix: String = "Folder")  -> [FolderCellViewModel] {
-        var result = [FolderCellViewModel]()
-        for index in 1...10 {
-            let folder = FolderCellViewModel(ident: CellIdents.ParentCell.rawValue)
-            folder.name = "\(prefix) \(index)"
-            result.append(folder)
+    func orders(prefix: String = "Folder")  -> [OrderCellViewModel] {
+        var result = [OrderCellViewModel]()
+        for _ in 1...10 {
+            let order = OrderCellViewModel(ident: CellIdents.OrderCell.rawValue)
+            order.orderDetails = orderDetails()
+            result.append(order)
         }
+        return result
+    }
+    
+    func orderDetails() -> [OrderCellViewModel] {
+        var result = [OrderCellViewModel]()
+        for _ in 1...3 {
+            let orderDetail = ProductCellViewModel(ident: CellIdents.ProductCell.rawValue)
+            result.append(orderDetail)
+        }
+        result.append(OrderTotalCellViewModel(ident: CellIdents.TotalCell.rawValue))
         return result
     }
     
     @IBAction func openAll(sender: AnyObject) {
-        folderAdaptor.openAll()
+        orderAdaptor.openAll()
         tableView.reloadData()
     }
     
     @IBAction func closeAll(sender: AnyObject) {
-        folderAdaptor.closeAll()
+        orderAdaptor.closeAll()
         tableView.reloadData()
     }
 }
@@ -63,21 +69,21 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return folderAdaptor.numberOfRows
+        return orderAdaptor.numberOfRows
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath),
-              let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? FolderTableViewCell
+        guard let cellViewModel = orderAdaptor.node(forIndexPath: indexPath),
+              let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? OrderTableViewCell
         else { return cellNotFound() }
         
-        cell.folderViewModel = cellViewModel
+        cell.orderViewModel = cellViewModel
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
-        folderAdaptor.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
+        guard let cellViewModel = orderAdaptor.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
+        orderAdaptor.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
     }
 }
