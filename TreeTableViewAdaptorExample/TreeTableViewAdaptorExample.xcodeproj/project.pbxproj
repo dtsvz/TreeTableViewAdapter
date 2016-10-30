@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325075731DC64E6D00712D91 /* TreeTableViewAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */; };
 		325F465F1DC545270079F2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F465E1DC545270079F2EE /* AppDelegate.swift */; };
 		325F46611DC545270079F2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46601DC545270079F2EE /* ViewController.swift */; };
 		325F46641DC545270079F2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46621DC545270079F2EE /* Main.storyboard */; };
 		325F46661DC545270079F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325F46651DC545270079F2EE /* Assets.xcassets */; };
 		325F46691DC545270079F2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F46671DC545270079F2EE /* LaunchScreen.storyboard */; };
-		325F46711DC545450079F2EE /* TreeTableViewAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46701DC545450079F2EE /* TreeTableViewAdaptor.swift */; };
 		325F46731DC54E7A0079F2EE /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46721DC54E7A0079F2EE /* FolderTableViewCell.swift */; };
 		325F46751DC54EC80079F2EE /* FolderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46741DC54EC80079F2EE /* FolderCellViewModel.swift */; };
 		325F46771DC5549C0079F2EE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F46761DC5549C0079F2EE /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeTableViewAdaptor.swift; path = ../../TreeTableViewAdaptor/TreeTableViewAdaptor.swift; sourceTree = "<group>"; };
 		325F465B1DC545260079F2EE /* TreeTableViewAdaptorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeTableViewAdaptorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		325F465E1DC545270079F2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		325F46601DC545270079F2EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		325F46651DC545270079F2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		325F46681DC545270079F2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		325F466A1DC545270079F2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		325F46701DC545450079F2EE /* TreeTableViewAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewAdaptor.swift; sourceTree = "<group>"; };
 		325F46721DC54E7A0079F2EE /* FolderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
 		325F46741DC54EC80079F2EE /* FolderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderCellViewModel.swift; sourceTree = "<group>"; };
 		325F46761DC5549C0079F2EE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		325F465D1DC545270079F2EE /* TreeTableViewAdaptor */ = {
 			isa = PBXGroup;
 			children = (
-				325F46701DC545450079F2EE /* TreeTableViewAdaptor.swift */,
+				325075721DC64E6D00712D91 /* TreeTableViewAdaptor.swift */,
 				325F465E1DC545270079F2EE /* AppDelegate.swift */,
 				325F46601DC545270079F2EE /* ViewController.swift */,
 				325F46621DC545270079F2EE /* Main.storyboard */,
@@ -148,8 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325F46711DC545450079F2EE /* TreeTableViewAdaptor.swift in Sources */,
 				325F46771DC5549C0079F2EE /* Helpers.swift in Sources */,
+				325075731DC64E6D00712D91 /* TreeTableViewAdaptor.swift in Sources */,
 				325F46611DC545270079F2EE /* ViewController.swift in Sources */,
 				325F46751DC54EC80079F2EE /* FolderCellViewModel.swift in Sources */,
 				325F465F1DC545270079F2EE /* AppDelegate.swift in Sources */,
