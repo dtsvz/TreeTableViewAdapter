@@ -4,12 +4,17 @@
 
 Implementation of Adaptor pattern to add to UITableView supporting to show hierarchical data structures
 
-- Just conform your model to TreeNode protocol and it can be displayed
-
+- Just conform your model to TreeNode protocol and it can be displayed in UITableView hierarchically
+- Declare adaptor property in your UIViewController
+- Implement UITableViewDelegate and UITableViewDatasource using adaptor
 
 ![Image](https://www.dropbox.com/s/wwe998yhnv1u2t7/ezgif.com-resize.gif?dl=1)
 
+
+
 ## Example
+
+
 
 ## Install
 
