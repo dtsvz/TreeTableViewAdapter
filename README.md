@@ -1,6 +1,6 @@
 # TreeTableViewAdaptor
 
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]() [![Carthage](https://img.shields.io/badge/Carthage-1.0.0-brightgreen.svg)]()
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]() [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Implementation of Adaptor pattern to add to UITableView supporting to show hierarchical data structures
 
@@ -86,7 +86,12 @@ Set your model array to adaptor and reload data in UITableView
 	tableView.reloadData()
 ```
 
-## Install
+## Installation
 
+Carthage:
+
+github "dtsvz/TreeTableViewAdaptor" == 1.0.0
+
+Or you can manually add TreeTableViewAdaptor.swift file to your project
 
 
