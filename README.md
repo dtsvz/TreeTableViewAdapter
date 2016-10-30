@@ -10,7 +10,9 @@ Implementation of Adaptor pattern to add to UITableView supporting to show hiera
 - Declare adaptor property in your UIViewController
 - Implement UITableViewDelegate and UITableViewDatasource using adaptor
 
-![Image](https://www.dropbox.com/s/wwe998yhnv1u2t7/ezgif.com-resize.gif?dl=1)
+![Image](https://www.dropbox.com/s/wwe998yhnv1u2t7/ezgif.com-resize.gif?dl=1) ![Image](https://www.dropbox.com/s/p9k8s3hziwly15j/ezgif.com-resize-3.gif?dl=1)
+
+
 
 
 
@@ -57,7 +59,7 @@ Implement custom tableview cell
 ```swift
 
 	class FolderTableViewCell: UITableViewCell {
-		
+
 	    @IBOutlet weak var label: UILabel!
 	    @IBOutlet weak var folderImageView: UIImageView!
 	    @IBOutlet weak var labelOffsetConstraint: NSLayoutConstraint!
