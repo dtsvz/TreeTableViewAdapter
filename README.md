@@ -141,4 +141,9 @@ github "dtsvz/TreeTableViewAdapter" == 1.0.1
 ```
 Or you can manually add TreeTableViewAdapter.swift file to your project
 
+## Requirements
+
+- iOS 8.0
+- XCode 7.3
+- Swift 2.2
 
