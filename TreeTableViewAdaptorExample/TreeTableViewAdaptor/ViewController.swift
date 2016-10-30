@@ -67,9 +67,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath),
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? FolderTableViewCell
+              let cell = tableView.dequeueReusableCellWithIdentifier(cellViewModel.ident) as? FolderTableViewCell
         else { return cellNotFound() }
         
         cell.folderViewModel = cellViewModel
@@ -78,7 +77,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
         guard let cellViewModel = folderAdaptor.node(forIndexPath: indexPath) where cellViewModel.hasChildren else { return }
         folderAdaptor.changeNodeState(inTableView: tableView, atIndexPath: indexPath)
     }
